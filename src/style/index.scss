@@ -1,0 +1,68 @@
+@import './_variables.scss';
+
+.box {
+  width: 600px;
+  margin: auto;
+  padding: $medium *1px; /* var medium fungerer ej här */
+}
+
+
+.surface-default {
+  background-color: $surface-default;
+  border-color: $border-primary-default;
+  border-style: solid;
+  border-width: $m; /**/
+  border-radius: $border-radius-l *1px; /**/
+}
+
+p {
+  font-family: $font-families-default;
+  font-weight: $font-weights-regular; 
+  line-height: $lineheight-s;
+  font-size: 44;
+}
+
+.body-m{
+  font-family: $font-families-default;
+  font-weight: $font-weights-regular; 
+  line-height: $lineheight-l;
+  font-size: $font-size-xs;
+  letter-spacing: $letter-spacing-m;
+  text-transform: $text-case-none;
+  text-decoration: $text-decoration-none;
+}
+
+.text-primary-on-light {
+  color: $text-primary-on-light;
+
+}
+
+.h1-m {
+  font-family: $font-families-default;
+  font-weight: $font-weights-medium; 
+  line-height: $lineheight-s;
+  font-size: 44; /*font-size variables doesn't work */
+  letter-spacing: $letter-spacing-s;
+  text-transform: $text-case-none;
+  text-decoration: $text-decoration-none;
+}
+
+.button-primary { 
+  background-color: $background-action-primary-default;
+  color: $text-action-primary-on-dark;
+  border: $border-action-primary-default;
+  line-height: $lineheight-m;
+}
+
+.button-large {
+  font-family:  $font-families-default;
+  font-weight: $font-weights-medium; 
+  line-height: $lineheight-m;
+  font-size: $font-size-xs;
+  letter-spacing: $letter-spacing-l;
+  text-transform: $text-case-none;
+  text-decoration: $text-decoration-none;
+
+  border-radius: $border-radius-l *1px;
+}
+
