@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import './style/index.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="box surface-default">
+      <h1 className="h1-m">Hello World</h1>
+      <p className="body-m text-primary-on-light">
+        Minim elit et minim officia proident magna elit deserunt. Aliqua anim id
+        culpa irure consectetur aute labore sint pariatur minim deserunt. In
+        aliqua culpa cillum Lorem non cillum aliquip ullamco velit mollit. Duis
+        tempor nulla deserunt enim aute cillum. Dolor sunt ad ut consectetur
+        reprehenderit proident laborum deserunt. Irure sunt mollit excepteur
+        ipsum qui ad ad. Amet aliqua ut excepteur occaecat elit anim aliqua.
+      </p>
+      <button className="button-primary button-large">Click Here</button>
     </div>
   );
 }
