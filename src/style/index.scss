@@ -3,30 +3,22 @@
 .box {
   width: 600px;
   margin: auto;
-  padding: $medium *1px; /* var medium fungerer ej här */
+  padding: $large *1px; /* pga ingen enhet i variabel */
 }
-
 
 .surface-default {
   background-color: $surface-default;
   border-color: $border-primary-default;
   border-style: solid;
   border-width: $m; /**/
-  border-radius: $border-radius-l *1px; /**/
+  border-radius: $border-radius-xl *1px; /**/
 }
 
-p {
-  font-family: $font-families-default;
-  font-weight: $font-weights-regular; 
-  line-height: $lineheight-s;
-  font-size: 44;
-}
-
-.body-m{
+.body-l{
   font-family: $font-families-default;
   font-weight: $font-weights-regular; 
   line-height: $lineheight-l;
-  font-size: $font-size-xs;
+  font-size: $font-size-xs *1px;
   letter-spacing: $letter-spacing-m;
   text-transform: $text-case-none;
   text-decoration: $text-decoration-none;
@@ -34,35 +26,54 @@ p {
 
 .text-primary-on-light {
   color: $text-primary-on-light;
-
 }
 
-.h1-m {
+.headline-xxl {
   font-family: $font-families-default;
   font-weight: $font-weights-medium; 
   line-height: $lineheight-s;
-  font-size: 44; /*font-size variables doesn't work */
+  font-size: $font-size-xxl *1px; /**/
   letter-spacing: $letter-spacing-s;
   text-transform: $text-case-none;
   text-decoration: $text-decoration-none;
+  margin: 0;
 }
 
-.button-primary { 
-  background-color: $background-action-primary-default;
-  color: $text-action-primary-on-dark;
-  border: $border-action-primary-default;
-  line-height: $lineheight-m;
-}
-
-.button-large {
+.button {
   font-family:  $font-families-default;
   font-weight: $font-weights-medium; 
   line-height: $lineheight-m;
-  font-size: $font-size-xs;
-  letter-spacing: $letter-spacing-l;
   text-transform: $text-case-none;
   text-decoration: $text-decoration-none;
+} 
 
-  border-radius: $border-radius-l *1px;
+.button-primary-on-light { 
+  background-color: $background-action-primary-default;
+  color: $text-action-primary-on-light;
+  border: none;
+}
+
+.button-secondary-on-light { 
+  background-color: $background-primary-light;
+  color: $text-action-primary-on-light;
+  border: $border-action-primary-default solid $m;
+}
+
+.button-large {
+  font-size: $font-size-xs *1px;
+
+  border-radius: $border-radius-xl *1px;
+  padding: $small *1px $medium *1px;
+}
+
+.button-small {
+  font-size: $font-size-xxs *1px;
+
+  border-radius: $border-radius-xl *1px;
+  padding: $small *1px $medium *1px;
+}
+
+.row-distance > button {
+  margin-right: $small *1px ;
 }
 

@@ -5,6 +5,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 In the project directory, you can run:
+### `npx style-dictionary build --config config.json`
+Updates the style-variables from the token file 
 
 ### `npm start`
 
