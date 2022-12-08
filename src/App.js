@@ -2,34 +2,46 @@ import './style/index.scss';
 
 function App() {
   return (
-    <div className="box surface-default">
-      <h1 className="headline-xxl">Hello World</h1>
-      <p className="body-l text-primary-on-light">
-        Minim elit et minim officia proident magna elit deserunt. Aliqua anim id
-        culpa irure consectetur aute labore sint pariatur minim deserunt. In
-        aliqua culpa cillum Lorem non cillum aliquip ullamco velit mollit. Duis
-        tempor nulla deserunt enim aute cillum. Dolor sunt ad ut consectetur
-        reprehenderit proident laborum deserunt. Irure sunt mollit excepteur
-        ipsum qui ad ad. Amet aliqua ut excepteur occaecat elit anim aliqua.
-      </p>
-      <button className="button button-primary-on-light button-large">
-        Click Here
-      </button>
-      <p className="body-l text-primary-on-light">
-        Minim elit et minim officia proident magna elit deserunt. Aliqua anim id
-        culpa irure consectetur aute labore sint pariatur minim deserunt. In
-        aliqua culpa cillum Lorem non cillum aliquip ullamco velit mollit. Duis
-        tempor nulla deserunt enim aute cillum.
-      </p>
-      <div className='row-distance'>
-        <button className="button button-primary-on-light button-small">
-          Here
-        </button>
-        <button className="button button-secondary-on-light button-small">
-          Or Here
-        </button>
+    <>
+    <h6 className="overline-l text-secondary-on-light">Polaroid</h6>
+    <h2 className='headline-xl'>Two new products</h2>
+    <div className='row'> 
+      <div className="card-product-promo-large">
+        <div className="title-section-center">
+          <h6 className="overline-l text-secondary-on-light">Exclusive</h6>
+          <h2 className="headline-l text-primary-on-light">
+            Polaroid Camera White
+          </h2>
+
+          <p className="body-m text-secondary-on-light vertical-margin-24">Launch 2023</p>
+          <button className="button button-secondary-on-light button-small">
+            Learn more
+          </button>
+        </div>
+        <div className=''>
+          <img src="https://www.figma.com/community/widget/1030479012894344777/snapshot" />
+        </div>
       </div>
-    </div>
+
+      <div className="card-product-promo-large">
+        <div className="title-section-center">
+          <h6 className="overline-l text-secondary-on-light">Exclusive</h6>
+          <h2 className="headline-l text-primary-on-light">
+            Polaroid Camera Beige
+          </h2>
+
+          <p className="body-m text-secondary-on-light vertical-margin-24">Launch 2024</p>
+          <button className="button button-secondary-on-light button-small">
+            Learn more
+          </button>
+        </div>
+        <div className=''>
+          <img src="https://www.kindpng.com/picc/m/56-564937_clip-art-polaroid-camera-clip-art-transparent-background.png" />
+        </div>
+      </div>
+      </div>
+    
+    </>
   );
 }
 
